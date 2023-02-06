@@ -1,64 +1,38 @@
 {
     "type":"SoC",
-    "name":"RN8213",
-    "series":["RN8318","RN8615","RN8213","RN8612","RN8611"],
-    "description":"RN Cortex M0 energy meter SoC",
-    "peripheral": ["TIM","PWM"],
-    "package":["LQFP100","LQFP64"],
-    "encryption": ["AES256","AES192","AES128"],
-    "SRAM":32000,
-    "Flash":256000,
+    "name":"CW32W031",
+    "title": "whxy CW32W031 SoC",
+    "description":"whxy Sub-1G SoC",
     "Core": {
-        "num": 1,
-        "architecture":"Cortex M0",
-        "Freq":29.4912
-    },
-    "Level": {
-        "main":1,
-        "sub":12,
-        "price":7
-    },
-    "GPIO": {
-        "num": [13,17],
-        "irq": 4
-    },
-    "ADC": {
-        "num": 1,
-        "channel": 6,
-        "resolution": 12,
-        "rate": 1024
-    },
-    "TIM": {
-        "resolution":[8,8,16]
-    },
-    "PWM": {
-        "num": 2,
-        "resolution": 8,
-        "rate": 256
-    },
-    "CLK": {
-        "HSE": [1000,16000],
-        "HSI": [16000],
-        "LSI": [32],
-        "PLL": [16000,16000],
-        "DIV": [1,128],
-        "accuracy": 0.02
-    },
-    "PWR": {
-        "VDD": [2500,5500],
-        "IDD": [2.21,14.31],
-        "Imax": 120
-    },
-    "EMC": {
-        "EFT": 2000,
-        "ESD": 4000
+        "CoreNum": 1,
+        "Core":"Cortex-M0",
+        "Fmax":48,
+        "DMIPS": 40,
+        "CoreMark": 100
     },
     "manufacturer": {
-        "vendor":"renergy-me",
-        "url": "http://www.renergy-me.cn/cn/index.php"
+        "vendor":"whxy",
+        "homepage":"https://www.whxy.com"
     },
-    "vendor":"sinomicon",
-    "url":"http://www.SoC.xin/RN8213",
-    "repo":"https://github.com/SoCXin/RN8213",
-    "version":"1.0.0"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/CW32W031.git"
+    },
+    "version":"1.0.0",
+    "series":["CW32L031","CW32W031"],
+    "package":["QFN64"],
+    "peripheral": ["ADC","USART","SPI","I2C"],
+    "temp": [-40,105],
+    "volt": [1.65,5.5],
+    "ESD": {
+        "HBM": 4000,
+        "CDM": 500
+    },
+    "keywords": [
+        "Cortex-M0",
+        "whxy",
+        "Sub-1G","I2C","SPI","USART"
+    ]
 }
+
+

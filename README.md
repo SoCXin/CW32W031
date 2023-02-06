@@ -1,42 +1,40 @@
-﻿# [RN8213](https://github.com/SoCXin/RN8213)
+﻿# [CW32W031](https://doc.soc.xin/CW32W031)
 
-[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
+* [whxy](https://www.whxy.com/): [Cortex-M0](https://github.com/SoCXin/Cortex)
+* [L1R2](https://github.com/SoCXin/Level): 48 MHz
 
-#### [Vendor](https://github.com/SoCXin/Vendor)：[RN](http://www.renergy-me.cn/cn/index.php)
-#### [Core](https://github.com/SoCXin/Cortex)：[Cortex M0](https://github.com/SoCXin/CM0)
-#### [Level](https://github.com/SoCXin/Level)：29.4812MHz
+## [简介](https://github.com/SoCXin/CW32W031/wiki)
 
-[RN8213](https://github.com/SoCXin/RN8213)集成 32bit ARM Cortex-M0、计量模块、硬件温补 RTC、 LCD 控制器、EEPROM
+[CW32W031](https://www.whxy.com/product/detail/81)基于CW32L031与PAN3028的SIP芯片，采用7.5mm×7.5mm×0.75mm超小尺寸QFN64封装，集成无线收发器。高集成度的设计大大减少了其他外部元器件，从而降低了整体BOM成本。
 
-* 128Kbytes FLASH (8Kbytes SRAM)，擦写次数 10 万次，数据保持时间大于 20 年
-* 32Kbytes EEPROM，擦写次数 100 万次，支持 WORD 编程
-* 保证计量精度的电压范围为2.8V~5.5V
-* 典型工作频率为 3.6864MHz（最高可达 29.4912MHz）
-* 单相智能表计应用时典型功耗约为 3.5mA,系统工作在 32Khz 下功耗约为 16μA,睡眠模式下芯片整体功耗约为 6μA.
-* 在 5000:1 动态范围内有功误差小于 0.1%,计量参考基准温度系数典型值为 5ppm
-* RTC 在-25℃ ~70℃内秒脉冲误差小于±5ppm，最小校正刻度为 0.068ppm
+采用ChirpIoTTM调制解调技术，支持半双工无线通信，工作频段为370~590 MHz和740~1180MHz，具有高抗干扰性、高灵敏度、低功耗和超远距离通信等特性。最高具有-140dBm的灵敏度，22dBm的输出功率，使其成为远距离传输和对可靠性要求极高应用的最佳选择。
 
-[![sites](docs/RN8213.png)](https://item.szlcsc.com/178573.html)
+### 关键参数
 
-#### 关键特性
+* 48 MHz Cortex-M0
+* 8KB SRAM + 64KB Flash + 128B OTP存储器
+* Sub-1G 射频，支持ChirpIoT调制方式
+    * 通信频段：370MHz ~ 590MHz，740MHz ~ 1180MHz
+    * 发射输出功率：-7dBm ~ 22dBm
+    * 最大链路预算可达：162dB
+    * 接收灵敏度：-140dBm@62.5kHz
+    * 深度休眠电流：400nA
+    * 接收电流：12.5mA@DCDC 模式
+    * 发射电流：135mA@22dBm，83mA@18dBm，25mA@0dBm
+    * 支持带宽：62.5kHz、125kHz、250kHz、500kHz
+    * 支持 SF 因子：7 ~ 12，支持扩频因子自动识别
+    * 支持码率：4/5，4/6，4/7，4/8
+    * 支持 CAD 功能
+    * 支持低速率模式：0.08kbps ~ 20.4kbps
+* QFN64，LDO 模式支持 1.8V - 3.6V
 
-* 单相SoC芯片，在 5000:1 动态范围内有功计量及无功计量误差小于 0.1%
-* 32KBytes EEPROM (100万次擦写)
-* 计量参考基准温度系数典型值为 5ppm
-* RTC 在-25℃ ~70℃内秒脉冲误差小于±5ppm，最小校正刻度为 0.068ppm
-* 支持零线和火线双通道有功电能、无功电能、视在电能同时计量
+## [资源收录](https://github.com/SoCXin)
 
-### [资源收录](https://github.com/SoCXin/RN8213)
-
-* [参考文档](docs/)
 * [参考资源](src/)
+* [参考文档](docs/)
 * [参考工程](project/)
 
-### [选型建议](https://github.com/SoCXin)
+## [选型建议](https://github.com/SoCXin/CW32W031)
 
-电能计量SoC在售相关
 
-* [RN8213](https://github.com/SoCXin/RN8213)
-* [HT5027](https://github.com/SoCXin/HT5027)
-
-###  [www.SoC.xin(芯)](http://www.SoC.Xin)
+## [www.SoC.xin](http://www.SoC.Xin)
